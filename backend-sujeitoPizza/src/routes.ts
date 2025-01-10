@@ -1,13 +1,16 @@
-import { Router, Request, Response } from "express";
-
-
+import { type Request, type Response, Router } from "express";
+import { AuthUserController } from "./controllers/user/AuthUserController";
+import { CreateUserController } from "./controllers/user/CreateUserController";
 const router = Router();
 
-router.get("/teste", (req: Request, res: Response) => {
-    // throw new Error("Erro ao fazer essa requisição");
-    res.json({ nome: "Sujeito Pizza" });
-    return;
-   
-})
+//-- ROTAS USER --
+router.post("/users", new CreateUserController().handle);
+router.post("/session", new AuthUserController().handle);
 
-export {router}
+router.get("/teste", (req: Request, res: Response) => {
+	// throw new Error("Erro ao fazer essa requisição");
+	res.json({ nome: "Sujeito Pizza" });
+	return;
+});
+
+export { router };
