@@ -8,7 +8,7 @@ class DetailUserController {
     // console.log("ID DO USER: ", user_id);
 
     const detailUserService = new DetailUserService();
-    const user = await detailUserService.execute();
+    const user = await detailUserService.execute(user_id);
 
     res.json(user);
   }
