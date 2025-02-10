@@ -25,7 +25,7 @@ export default function Page() {
             />
             <button type="submit">Acessar</button>
           </form>
-          <Link href="/signup">Não possui uma conta? Cadastra-se</Link>
+          <Link className={styles.text} href="/signup">Não Possuí uma conta? Cadastra-se</Link>
         </section>
       </div>
     </>
