@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <>
-      <div className={styles.containerCenter}>
+      <main className={styles.containerCenter}>
         <Image src={logoImg} alt="Logo da pizzaria" />
         <section className={styles.login}>
           <form>
@@ -27,7 +27,7 @@ export default function Page() {
           </form>
           <Link className={styles.text} href="/signup">Não Possuí uma conta? Cadastra-se</Link>
         </section>
-      </div>
+      </main>
     </>
   );
 }

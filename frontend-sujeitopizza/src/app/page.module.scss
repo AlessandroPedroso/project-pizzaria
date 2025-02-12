@@ -16,6 +16,11 @@
   width: 100%;
   padding: 0 10px;
 
+  h1{
+    color: var(--white);
+    font-family: sans-serif;
+  }
+  
 
   form{
     color: var(--white);
@@ -26,6 +31,7 @@
     width: 100%;
     max-width: 500px;
     gap: 16px;
+ 
   }
 
   form button{
