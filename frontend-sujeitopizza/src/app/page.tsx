@@ -40,7 +40,6 @@ export default function Page() {
 
       // console.log(response)
 
-      
     } catch (err) {
       console.log(err);
       return;
